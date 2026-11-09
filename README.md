@@ -1,3 +1,5 @@
+[English](README.md) | [Русский](README_RU.md)
+
 # Transaction Fraud Detection System
 
 A reproducible portfolio prototype that ranks historical card transactions for **human review**. It compares supervised classification with anomaly detection, selects a cost-sensitive policy on validation, and serves the fitted pipeline through FastAPI. It does not authorize fraud determinations or automatically deny transactions.
