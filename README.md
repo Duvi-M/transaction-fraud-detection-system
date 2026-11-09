@@ -2,7 +2,7 @@
 
 A reproducible portfolio prototype that ranks historical card transactions for **human review**. It compares supervised classification with anomaly detection, selects a cost-sensitive policy on validation, and serves the fitted pipeline through FastAPI. It does not authorize fraud determinations or automatically deny transactions.
 
-**Status:** implemented and locally tested with the original ULB/Worldline dataset; Docker runtime and remote GitHub Actions remain unverified. See [release verification](RELEASE_REPORT.md) for the publication checks and the [Russian CV snippet](docs/cv_entry_ru.tex) for a concise project entry.
+**Status:** published and locally tested with the original ULB/Worldline dataset. [GitHub Actions](https://github.com/Duvi-M/transaction-fraud-detection-system/actions/workflows/ci.yml) reports remote CI status; Docker runtime remains unverified. See [release verification](RELEASE_REPORT.md) for the publication checks and the [Russian CV snippet](docs/cv_entry_ru.tex) for a concise project entry.
 
 ## Measured result
 
@@ -90,7 +90,7 @@ docker run --rm -p 127.0.0.1:8000:8000 \
   -v "$PWD/artifacts/real:/app/artifacts:ro" transaction-fraud
 ```
 
-The image runs as a non-root user and needs no dataset or credentials at runtime. A model is mounted read-only. The GitHub Actions workflow installs the lock, lints, formats and runs fixture-backed tests without acquiring Kaggle data. The workflow is written but has not been run remotely.
+The image runs as a non-root user and needs no dataset or credentials at runtime. A model is mounted read-only. The GitHub Actions workflow installs the lock, lints, formats and runs fixture-backed tests without acquiring Kaggle data. The workflow runs on Ubuntu 24.04 with Python 3.12.12; inspect [GitHub Actions](https://github.com/Duvi-M/transaction-fraud-detection-system/actions/workflows/ci.yml) for each commit's actual outcome.
 
 ## Limits
 

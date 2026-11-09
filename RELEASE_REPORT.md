@@ -45,3 +45,7 @@ Only small aggregate JSON results, partition counts, cost sensitivity, summary M
 ## Suitability and limitations
 
 Suitable as an internship portfolio demonstration of reproducible offline ML, imbalance-aware evaluation and model serving. It is not evidence of production antifraud performance, calibrated fraud probabilities, bank savings, compliance approval, live investigator outcomes or operational readiness. There are only two historical days and 74 positive test labels; global anonymized PCA and unknown label/feature timing remain material limitations. Docker runtime verification is still outstanding.
+
+## Remote CI environment correction
+
+The first published commit reached GitHub Actions, but [run 42645644645](https://github.com/Duvi-M/transaction-fraud-detection-system/actions/runs/42645644645) failed during Python setup before dependency installation or tests: `ubuntu-latest` had migrated to Ubuntu 26.04, for which Python 3.12.12 was unavailable. The official Python versions manifest confirmed an Ubuntu 24.04 build. The workflow now pins `ubuntu-24.04`, preserves Python 3.12.12 and all dependency locks, and pins the official Node 24-based checkout/setup-python v6 actions by commit SHA. No experimental or model code changed. Subsequent outcomes are available on the [Actions page](https://github.com/Duvi-M/transaction-fraud-detection-system/actions/workflows/ci.yml).
