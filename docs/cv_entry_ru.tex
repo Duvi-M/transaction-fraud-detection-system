@@ -1,0 +1,18 @@
+% pdfLaTeX preamble requirements (add once to your existing CV):
+% \usepackage[T2A]{fontenc}
+% \usepackage[utf8]{inputenc}
+% \usepackage[russian,english]{babel}
+% \usepackage{hyperref}
+
+\noindent\textbf{Transaction Fraud Detection System}\hfill
+\href{https://github.com/Duvi-M/transaction-fraud-detection-system}{GitHub}
+\begin{itemize}
+  \item Разработал воспроизводимый ML pipeline на Python, pandas и scikit-learn
+  для ULB/Worldline: 284\,807 транзакций, 492 метки fraud, временное разбиение.
+  Сравнил Logistic Regression, Random Forest и Isolation Forest;
+  Random Forest достиг Average Precision 0.8166 на test.
+  \item По стоимости ошибок на validation выбрал Logistic Regression:
+  Average Precision 0.7475, Recall 85.14\% (63 из 74 fraud на test,
+  221 false positive). Реализовал FastAPI scoring, SQL-аналитику на DuckDB,
+  Dockerfile и 20 проходящих тестов pytest.
+\end{itemize}

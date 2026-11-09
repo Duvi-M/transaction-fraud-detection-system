@@ -1,0 +1,12 @@
+.venv
+.cache
+data
+artifacts
+reports
+.git
+__pycache__
+.env
+.env.*
+*.zip
+build
+dist

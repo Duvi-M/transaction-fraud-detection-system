@@ -1,0 +1,1 @@
+{"seed": 42, "train_fraction": 0.6, "validation_fraction": 0.2, "max_alert_fraction": 0.01, "false_positive_cost": 1.0, "false_negative_cost": 100.0, "top_k": 100}

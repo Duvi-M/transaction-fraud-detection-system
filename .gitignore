@@ -1,0 +1,39 @@
+# Environments, caches and build outputs
+.venv/
+.cache/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+.DS_Store
+
+# Credentials and local archives
+.env
+.env.*
+!.env.example
+*.zip
+*.tar
+*.gz
+*.joblib
+*.pkl
+
+# Data and models stay local; publish provenance only.
+data/*
+!data/provenance.json
+artifacts/
+
+# Publish only reviewed aggregate experiment evidence.
+reports/*
+!reports/real/
+reports/real/*
+!reports/real/results.json
+!reports/real/selection_lock.json
+!reports/real/split.json
+!reports/real/SUMMARY.md
+!reports/real/test_comparisons.png
+!reports/real/validation_comparisons.png
+!reports/real/validation_sensitivity.json
+!reports/real/validation_sensitivity.png
+!reports/release_checks.json

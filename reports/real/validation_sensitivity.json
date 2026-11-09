@@ -1,0 +1,68 @@
+{
+  "cost_policies": [
+    {
+      "threshold": 0.9999922476121045,
+      "validation_cost": 20.0,
+      "alerts": 43,
+      "fp_cost": 1,
+      "fn_cost": 1,
+      "max_alert_fraction": 0.01
+    },
+    {
+      "threshold": 0.9996296180474624,
+      "validation_cost": 155.0,
+      "alerts": 69,
+      "fp_cost": 1,
+      "fn_cost": 10,
+      "max_alert_fraction": 0.01
+    },
+    {
+      "threshold": 0.9996296180474624,
+      "validation_cost": 350.0,
+      "alerts": 69,
+      "fp_cost": 1,
+      "fn_cost": 25,
+      "max_alert_fraction": 0.01
+    },
+    {
+      "threshold": 0.8907583217076319,
+      "validation_cost": 1087.0,
+      "alerts": 336,
+      "fp_cost": 1,
+      "fn_cost": 100,
+      "max_alert_fraction": 0.01
+    },
+    {
+      "threshold": 0.8907583217076319,
+      "validation_cost": 2287.0,
+      "alerts": 336,
+      "fp_cost": 1,
+      "fn_cost": 250,
+      "max_alert_fraction": 0.01
+    },
+    {
+      "threshold": 0.8907583217076319,
+      "validation_cost": 8287.0,
+      "alerts": 336,
+      "fp_cost": 1,
+      "fn_cost": 1000,
+      "max_alert_fraction": 0.01
+    }
+  ],
+  "budget_fractions": [
+    0.001,
+    0.002,
+    0.005,
+    0.01,
+    0.02,
+    0.05
+  ],
+  "recall_at_budget": [
+    0.7368421052631579,
+    0.7894736842105263,
+    0.8421052631578947,
+    0.8596491228070176,
+    0.8596491228070176,
+    0.8947368421052632
+  ]
+}
